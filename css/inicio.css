@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    height: 100%;
+}
+
+html{
+    height: 100%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+#workspace{
+    background-color: #2c353a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#workspace > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu_aside{
+    flex-direction: column;
+    height: 100%;
+    width: 20%;
+    min-width: 250px;
+}
+
+#menu_aside > div{
+    width: 100%;
+}
+
+#caja_codigos{
+    background-color: #2c353a;
+    align-self: stretch;
+    height: 100%;
+    width: 80%;
+}
+
+#caja_codigos > div {
+    flex: 50%;
+    height: 100%;
+    padding: 5px;
+}
+
+#navegacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: rgb(140, 140, 140);
+    flex: 10%;
+}
+
+#navegacion > div{
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ padding: 10px;
+}
+
+.boton_navegacion i{
+    cursor: pointer;
+}
+
+
+#boton_menu_traductor{
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+#menu{
+    flex: 90%;;
+}
+  
+textarea {
+	height: 100%;
+    width: 100%;
+    resize: none;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4c5c64;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.caja_opciones_menu {
+    height: 100% !important;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+hr{
+    width: 95%;
+}
+  
+
+#caja_entrada_lenguajes_traductor {
+    flex: 60%;
+}
+
+#caja_entrada_archivo_traductor {
+    flex: 30%;
+}
+
+#caja_botones_traductor {
+    flex: 10%;
+}
+
+
+
+
+#caja_entrada_lenguajes_traductor {
+    text-align: center;
+  }
+  
+  
+#texto_lenguaje_entrada {
+    margin: 10px 0;
+}
+
+#inputLang {
+    margin: 10px 0;
+}
+
+#logo_flecha_lenguaje {
+font-size: 50px;
+    margin: 10px 0;
+}
+
+#inputLang {
+    width: 90%;
+}
+
+#texto_lenguaje_salida {
+    margin: 15px 0;
+}
+
+#outputLang {
+    width: 90%;
+}
+
+#caja_entrada_archivo_traductor {
+    text-align: center;
+ 
+}
+
+#texto_subir_archivo{
+    margin: 10px 0;
+}
+
+#file-input {
+	width: 90%;
+}
+
+
+#caja_botones_traductor {
+    display: flex;
+}
+
+#caja_botones_traductor > div {
+    flex: 50%;
+    text-align: center;
+    font-size: 35px;
+    padding: 5px;
+    border-radius: 3px;
+    margin: 3px;
+    border: 2px solid;
+    cursor: pointer;
+
+    transition: 0.5s;
+}
+
+#caja_botones_traductor > div:hover{
+    background-color: #62737b;
+    color: rgb(39, 47, 48);
+}
+
+.caja_codigo{
+    position: relative;
+}
+
+.logo_lenguaje_editor{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    height: 85px;
+    width: 85px;
+    background-color: rgb(60, 69, 69);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+#opciones_menu_analizador_aritmetico, #opciones_menu_analizador_lexico, #opciones_menu_informacion{
+    display: none;
+}
+
+#caja_enlaces_github{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+}
+
+#caja_enlaces_github > div{
+    flex: 50%;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    display: flex;
+    flex-direction: column;
+}
+
+#caja_enlaces_github strong{
+    font-size: 13px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}

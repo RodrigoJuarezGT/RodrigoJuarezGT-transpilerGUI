@@ -1,0 +1,66 @@
+<html>
+<body>
+
+  Code to translate:
+  <input type="text" id="inputText" value="var i = a || b;">
+  <br/>Input language:
+  <input type="text" id="inputLang" value="Detect language">
+  <br/>Output language:
+  <input type="text" id="outputLang" value="C">
+  <br/>
+
+<button onclick="myFunction()">Translate source code</button>
+
+<p id="demo"></p>
+
+<script src="optimized_translator.js"></script>
+<script>
+"use strict";
+
+function myFunction() {
+    var inputLang = document.getElementById("inputLang").value;
+    var outputLang = document.getElementById("outputLang").value;
+    var inputText = document.getElementById("inputText").value;
+	if(inputLang === "Detect language"){
+		for(const current of list_of_languages){
+			try{
+				document.getElementById("demo").innerHTML = translateLang(current, outputLang, inputText)
+				.replace(/&/g, "&amp;")
+				.replace(/</g, "&lt;")
+				.replace(/>/g, "&gt;")
+				.replace(/"/g, "&quot;")
+				.replace(/'/g, "&#039;");
+			}
+			catch(e){
+				
+			}
+		}
+	}
+	else{
+		try{
+			document.getElementById("demo").innerHTML = translateLang(inputLang, outputLang, inputText)
+			.replace(/&/g, "&amp;")
+			.replace(/</g, "&lt;")
+			.replace(/>/g, "&gt;")
+			.replace(/"/g, "&quot;")
+			.replace(/'/g, "&#039;");
+		}
+		catch(e){
+			alert(e);
+			alert(e.stack);
+		}
+    }
+}
+
+/*
+ * PEG.js 0.9.0
+ *
+ * http://pegjs.org/
+ *
+ * Copyright (c) 2010-2015 David Majda
+ * Licensed under the MIT license.
+ */
+</script>
+
+</body>
+</html>

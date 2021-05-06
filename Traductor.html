@@ -1,0 +1,189 @@
+
+<!doctype html>
+<html>
+<head>
+	
+<script src="javascript/js_transpiler/java_parser.js"></script>
+<script src="javascript/js_transpiler/alloy_parser.js"></script>
+<script src="javascript/js_transpiler/tex_parser.js"></script>
+<script src="javascript/js_transpiler/kotlin_parser.js"></script>
+<script src="javascript/js_transpiler/minizinc_parser.js"></script>
+<script src="javascript/js_transpiler/tptp_parser.js"></script>
+<script src="javascript/js_transpiler/rust_parser.js"></script>
+<script src="javascript/js_transpiler/scala_parser.js"></script>
+<script src="javascript/js_transpiler/cpp_parser.js"></script>
+<script src="javascript/js_transpiler/ada_parser.js"></script>
+<script src="javascript/js_transpiler/vhdl_parser.js"></script>
+<script src="javascript/js_transpiler/go_parser.js"></script>
+<script src="javascript/js_transpiler/javascript_parser.js"></script>
+<script src="javascript/js_transpiler/python_parser.js"></script>
+<script src="javascript/js_transpiler/webassembly_parser.js"></script>
+<script src="javascript/js_transpiler/core_logic_parser.js"></script>
+<script src="javascript/js_transpiler/delphi_parser.js"></script>
+<script src="javascript/js_transpiler/fortran_parser.js"></script>
+<script src="javascript/js_transpiler/standard_ml_parser.js"></script>
+<script src="javascript/js_transpiler/thrift_parser.js"></script>
+<script src="javascript/js_transpiler/protobuf_parser.js"></script>
+<script src="javascript/js_transpiler/mysql_parser.js"></script>
+<script src="javascript/js_transpiler/glsl_parser.js"></script>
+<script src="javascript/js_transpiler/r_parser.js"></script>
+<script src="javascript/js_transpiler/pseudocode_parser.js"></script>
+<script src="javascript/js_transpiler/swift_parser.js"></script>
+<script src="javascript/js_transpiler/octave_parser.js"></script>
+<script src="javascript/js_transpiler/typescript_parser.js"></script>
+<script src="javascript/js_transpiler/smt_lib_parser.js"></script>
+<script src="javascript/js_transpiler/wolfram_parser.js"></script>
+<script src="javascript/js_transpiler/erlang_parser.js"></script>
+<script src="javascript/js_transpiler/mathematical_notation_parser.js"></script>
+<script src="javascript/js_transpiler/maxima_parser.js"></script>
+<script src="javascript/js_transpiler/english_parser.js"></script>
+<script src="javascript/js_transpiler/julia_parser.js"></script>
+<script src="javascript/js_transpiler/perl_parser.js"></script>
+<script src="javascript/js_transpiler/prolog_parser.js"></script>
+<script src="javascript/js_transpiler/mercury_parser.js"></script>
+<script src="javascript/js_transpiler/coq_parser.js"></script>
+<script src="javascript/js_transpiler/lean_parser.js"></script>
+<script src="javascript/js_transpiler/pddl_parser.js"></script>
+<script src="javascript/js_transpiler/clojure_parser.js"></script>
+<script src="javascript/js_transpiler/common_lisp_parser.js"></script>
+<script src="javascript/js_transpiler/emacs_lisp_parser.js"></script>
+<script src="javascript/js_transpiler/racket_parser.js"></script>
+<script src="javascript/js_transpiler/clips_parser.js"></script>
+<script src="javascript/js_transpiler/kif_parser.js"></script>
+<script src="javascript/js_transpiler/jison_parser.js"></script>
+<script src="javascript/js_transpiler/ometa_parser.js"></script>
+<script src="javascript/js_transpiler/racc_parser.js"></script>
+<script src="javascript/js_transpiler/ohm_parser.js"></script>
+<script src="javascript/js_transpiler/marpa_parser.js"></script>
+<script src="javascript/js_transpiler/nearley_parser.js"></script>
+<script src="javascript/js_transpiler/pegjs_parser.js"></script>
+<script src="javascript/js_transpiler/picat_parser.js"></script>
+<script src="javascript/js_transpiler/regex_parser.js"></script>
+<script src="javascript/js_transpiler/antlr_parser.js"></script>
+<script src="javascript/js_transpiler/txl_parser.js"></script>
+<script src="javascript/js_transpiler/haskell_parser.js"></script>
+<script src="javascript/js_transpiler/futhark_parser.js"></script>
+<script src="javascript/js_transpiler/ats_parser.js"></script>
+<script src="javascript/js_transpiler/haxe_parser.js"></script>
+<script src="javascript/js_transpiler/php_parser.js"></script>
+<script src="javascript/js_transpiler/hack_parser.js"></script>
+<script src="javascript/js_transpiler/lua_parser.js"></script>
+<script src="javascript/js_transpiler/vba_parser.js"></script>
+<script src="javascript/js_transpiler/vb_net_parser.js"></script>
+<script src="javascript/js_transpiler/ruby_parser.js"></script>
+<script src="javascript/js_transpiler/c_parser.js"></script>
+<script src="javascript/js_transpiler/c_sharp_parser.js"></script>
+<script src="javascript/js_transpiler/transpiler.js"></script>
+
+
+
+
+
+<script src="https://kit.fontawesome.com/3036f11d09.js" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="css/inicio.css">
+
+</head>
+<body onload = "persistence()">
+
+<div id="workspace">
+
+<div id="menu_aside">
+
+	<div id="navegacion">
+		<div class="boton_navegacion" id="boton_menu_traductor">
+			<i class="fas fa-laptop-code" id="boton_interprete"></i>
+		</div>
+		<div class="boton_navegacion" id="boton_menu_expresiones">
+			<i class="fas fa-square-root-alt" id="boton_an_aritmetico"></i>
+		</div>
+		<div class="boton_navegacion" id="boton_menu_analizador">
+			<i class="fas fa-sort-alpha-up" id="boton_an_lexico"></i>
+		</div>
+		<div class="boton_navegacion" id="boton_menu_about">
+			<i class="fas fa-info-circle" id="boton_info"></i>
+		</div>
+	</div>
+	<div id="menu">
+		<div class="caja_opciones_menu" id="opciones_menu_traductor">
+			<div class="div_menu_traductor" id="caja_entrada_lenguajes_traductor">
+				<h1>Interprete</h1>
+				<hr>
+				<div id="texto_lenguaje_entrada">Lenguaje de Entrada</div>
+				<select id="inputLang" >
+					<option value="blank"></option>
+					<option value="C">C</option>
+					<option value="C#">C#</option>
+					<option value="JavaScript">JavaScript</option>
+					<option value="Prolog">Prolog</option>
+					<option value="PHP">PHP</option>
+					<option value="Python">Python</option>
+				</select>
+				<div id="logo_flecha_lenguaje">
+					<i class="fas fa-arrow-alt-circle-down"></i>
+				</div>
+				<div id="texto_lenguaje_salida">Lenguaje de Salida</div>
+				<input type="text" id="outputLang" readonly>
+			</div>
+			<div class="div_menu_traductor" id="caja_entrada_archivo_traductor">
+				<div id="texto_subir_archivo">Subir Archivo</div>
+				<input type="file" id="file-input" /> 
+			</div>
+			<div class="div_menu_traductor" id="caja_botones_traductor">
+				<div id="descargar_archivo" onclick = "save_file()"> <i class="fas fa-download"></i> </div>
+				<div id="cambiar_lenguajes" onclick = "switch_langs(); cambiarlogos()"> <i class="fas fa-exchange-alt"></i> </div>
+				<!-- <button type="button" onclick = "save_file()">Download file</button> -->
+				<!-- <button type="button" onclick = "switch_langs()">Switch languages</button> -->
+			</div>
+		</div>
+		<div class="caja_opciones_menu" id="opciones_menu_analizador_aritmetico">
+			<h2>Analizador Aritmetico</h2>
+			<hr>
+		</div>
+		<div class="caja_opciones_menu" id="opciones_menu_analizador_lexico">
+			<h2>Analizador Lexico</h2>
+			<hr>
+		</div>
+		<div class="caja_opciones_menu" id="opciones_menu_informacion">
+			<h2>Informacion del proyecto</h2>
+			<hr>
+			<div id="caja_info_proyecto" style="line-height: 25px; text-align: justify; padding: 5px;">
+				<strong>Proyecto 1 compiladores</strong>, desarrollado por Rodrigo Arturo Juarez Maldonado 
+				carnet: 1490-18-24859, de la carrera de Ingenieria en Sistemas y Ciencias de la Computacion 
+				plan fin de semana, Seccion B. <br> <br>
+				Este proyecto se baso en el proyecto "Transpiler" en github, el codigo del analizador lexico y 
+				el analizador de expresiones aritmeticas es 100% original.  
+			</div>
+			<div id="caja_enlaces_github">
+				<div id="enlace_transpiler">
+					<a href="https://github.com/jarble/transpiler" target="_blank"><i class="fab fa-github"></i></a>
+					<div><strong>Transpiler</strong></div>
+				</div>
+				<div id="enlace_migithub">
+					<a href="https://github.com/RodrigoJuarezGT" target="_blank"><i class="fab fa-github"></i></a>
+					<div><strong>RodrigoJuarezGT</strong></div>
+				</div>	
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<div id="caja_codigos">
+	<div class="caja_codigo" id="codigo_entrada">
+		<textarea id="inputText" ></textarea>
+		<div class="logo_lenguaje_editor" id="logo_codigo_entrada"></div>
+	</div>
+	<div class="caja_codigo" id="codigo_salida">
+		<textarea id="outputText" ></textarea>
+		<div class="logo_lenguaje_editor" id="logo_codigo_salida"></div>
+	</div>
+</div>
+
+</div>
+
+
+
+<script src="javascript/extraJS.js"></script>
+</body>
+</html>
