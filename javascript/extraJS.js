@@ -11,6 +11,7 @@ var logo_JS = "<i class='fab fa-js-square'></i>"
 var logo_prolog = "<i class='fab fa-earlybirds'></i>"
 
 
+
 lenguajeentrada.onchange = function(){
     var valor = this.value
     var lensalida
@@ -56,6 +57,12 @@ lenguajeentrada.onchange = function(){
 }
 
 //manejo de la navegacion
+var cod_en  = document.getElementById("codigo_entrada")
+var cod_sal = document.getElementById("codigo_salida")
+var cod_anali = document.getElementById("codigo_analizador")
+var cod_consol = document.getElementById("caja_consola")
+
+
 
 var opcionestraductor = document.getElementById("opciones_menu_traductor")
 var opcionesaritmetico = document.getElementById("opciones_menu_analizador_aritmetico")
@@ -104,6 +111,10 @@ botoninterprete.onclick = function(){
     this.style.color = "white";
     areabotoninterprete.style.borderBottom = "2px solid white"
     opcionestraductor.style.display = "flex"
+    cod_en.style.display = "flex"
+    cod_sal.style.display = "flex"
+    cod_anali.style.display = "none"
+    cod_consol.style.display = "none"
 }
 
 botonaritmetico.onclick = function(){
@@ -113,6 +124,11 @@ botonaritmetico.onclick = function(){
     this.style.color = "white";
     areabotonaritmetico.style.borderBottom = "2px solid white"
     opcionesaritmetico.style.display = "flex"
+
+    cod_en.style.display = "none"
+    cod_sal.style.display = "none"
+    cod_anali.style.display = "flex"
+    cod_consol.style.display = "flex"
 }
 
 botonlexico.onclick = function(){
@@ -122,6 +138,10 @@ botonlexico.onclick = function(){
     this.style.color = "white";
     areabotonlexico.style.borderBottom = "2px solid white"
     opcioneslexico.style.display = "flex"
+    cod_en.style.display = "none"
+    cod_sal.style.display = "none"
+    cod_anali.style.display = "flex"
+    cod_consol.style.display = "flex"
 }
 
 botoninfo.onclick = function(){
@@ -133,14 +153,6 @@ botoninfo.onclick = function(){
     opcionesinfo.style.display = "flex"
 }
 
-
-const editor = CodeMirror(document.querySelector("#inputText"), {
-    lineNumbers: true,
-    tabSize: 2,
-    value: "",
-    theme: "dracula",
-    mode: "text/x-csrc",
-    });
 
 
 "use strict";

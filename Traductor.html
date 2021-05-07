@@ -139,6 +139,10 @@
 		<div class="caja_opciones_menu" id="opciones_menu_analizador_aritmetico">
 			<h2>Analizador Aritmetico</h2>
 			<hr>
+			<div class="caja_boton_analizar">
+				<i class="far fa-play-circle" id="icono_boton_analizar"></i>
+				<div><strong>Analizar</strong></div>
+			</div>
 		</div>
 		<div class="caja_opciones_menu" id="opciones_menu_analizador_lexico">
 			<h2>Analizador Lexico</h2>
@@ -170,20 +174,28 @@
 </div>
 
 <div id="caja_codigos">
-	<div class="caja_codigo" id="codigo_entrada">
+	<div class="caja_codigo caja_codigo_interprete" id="codigo_entrada">
 		<textarea id="inputText" ></textarea>
 		<div class="logo_lenguaje_editor" id="logo_codigo_entrada"></div>
 	</div>
-	<div class="caja_codigo" id="codigo_salida">
+	<div class="caja_codigo caja_codigo_interprete" id="codigo_salida">
 		<textarea id="outputText" ></textarea>
 		<div class="logo_lenguaje_editor" id="logo_codigo_salida"></div>
+	</div>
+	<div class="caja_codigo caja_codigo_analizadores"  id="codigo_analizador" style="flex: 60%;">
+		<textarea id="textarea_expresion_aritmtica" ></textarea>
+	</div>
+	<div class="caja_codigo caja_codigo_analizadores" id="caja_consola" style="flex: 40%;">
+		<div id="consola">
+		</div>
 	</div>
 </div>
 
 </div>
 
 
-
+<script src="javascript/analizador_aritmetico.js"></script>
 <script src="javascript/extraJS.js"></script>
+
 </body>
 </html>
