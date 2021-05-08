@@ -16,4 +16,4 @@ Enlace para ejecutar el proyecto:
 
 Video explicando el proyecto:
 
-https://www.youtube.com/watch?v=8UVNT4wvIGY
+https://youtu.be/a-IGCU3a8B4
