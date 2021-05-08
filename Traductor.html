@@ -74,11 +74,6 @@
 <script src="javascript/js_transpiler/c_parser.js"></script>
 <script src="javascript/js_transpiler/c_sharp_parser.js"></script>
 <script src="javascript/js_transpiler/transpiler.js"></script>
-
-
-
-
-
 <script src="https://kit.fontawesome.com/3036f11d09.js" crossorigin="anonymous"></script>
 
 <link rel="stylesheet" href="css/inicio.css">
@@ -142,11 +137,24 @@
 			<div class="caja_boton_analizar">
 				<i class="far fa-play-circle" id="icono_boton_analizar"></i>
 				<div><strong>Analizar</strong></div>
+				<br>
+				<div class="caja_boton_limpiar_consola">
+					<i class="fas fa-broom" onclick="document.getElementById('consola').innerHTML = ' '"></i>
+				</div>
 			</div>
 		</div>
 		<div class="caja_opciones_menu" id="opciones_menu_analizador_lexico">
 			<h2>Analizador Lexico</h2>
 			<hr>
+			<div class="caja_boton_analizar">
+				<i class="far fa-play-circle" id="icono_boton_analizar_lexico"></i>
+				<div><strong>Analizar</strong></div>
+				<div style="font-size: 14px;">Analizador lexico para el lenguaje de programacion <strong>c++</strong></div>
+				<br>
+				<div class="caja_boton_limpiar_consola">
+					<i class="fas fa-broom" onclick="document.getElementById('consola').innerHTML = ' '"></i>
+				</div>
+			</div>
 		</div>
 		<div class="caja_opciones_menu" id="opciones_menu_informacion">
 			<h2>Informacion del proyecto</h2>
@@ -193,7 +201,7 @@
 
 </div>
 
-
+<script src="javascript/analizador_lexico.js"></script>
 <script src="javascript/analizador_aritmetico.js"></script>
 <script src="javascript/extraJS.js"></script>
 

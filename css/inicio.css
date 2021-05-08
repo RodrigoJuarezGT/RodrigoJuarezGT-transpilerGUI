@@ -269,5 +269,14 @@ a{
     padding: 10px;
     border: 1px solid white;
     font-size: 14px;
+    overflow-y: auto;
 }
 
+.caja_boton_limpiar_consola i{
+    font-size: 25px;
+    transition: 0.2s;
+}
+
+.caja_boton_limpiar_consola i:hover{
+    font-size: 30px;
+}
